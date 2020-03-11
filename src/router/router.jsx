@@ -2,8 +2,8 @@ import React from 'react';
 
 import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 
-import Home from '../pages/Home/index';
-import About from '../pages/About/index';
+import Home from '../pages/Home/index.jsx';
+import About from '../pages/About/index.jsx';
 
 
 const getRouter = () => (

@@ -4,7 +4,7 @@ const APP_PATH = path.resolve(__dirname, '../src');
 const DIST_PATH = path.resolve(__dirname, '../dist');
 module.exports = {
     entry: {
-        app: './src/index.js',
+        app: './src/index.jsx',
         framework: ['react', 'react-dom'],
     },
     output: {
@@ -14,7 +14,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js?$/,
+                test: /\.(js|jsx)?$/,
                 use: "babel-loader",
                 include: APP_PATH
             },
